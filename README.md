@@ -1,6 +1,6 @@
 # Recommendation-System-for-Social-networking
 
-**Выпускной проект курса** [Start ML KARPOV.COURSES](https://karpov.courses/ml-start)
+## **Выпускной проект курса** [Start ML KARPOV.COURSES](https://karpov.courses/ml-start)
 
 ## Задача
 Необходимо реализовать сервис, который будет для каждого юзера в любой момент времени возвращать посты, которые пользователю покажут в его ленте соцсети.
