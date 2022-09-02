@@ -7,7 +7,7 @@
 
 ## Решение
 1) Подготовка фич и обучение на них Catboost модели ([Control model](https://github.com/Netees/Recommendation-System-for-Social-networking/blob/main/Prep_features_and_learning_models/Model_control_Catboost.ipynb))
-2) Подготовка фич и обучение на них Fully connected NN (Test model)
+2) Подготовка фич и обучение на них Fully connected NN ([Test model](https://github.com/Netees/Recommendation-System-for-Social-networking/blob/main/Prep_features_and_learning_models/Model_test_FC_NN.ipynb))
 3) Написание [приложения](https://github.com/Netees/Recommendation-System-for-Social-networking/blob/main/app_final.py), которое разбивает пользователей на группы(control & test) и для каждой из групп использовать одну из двух реализованных моделей для выдачи рекомендации
 4) Проведение А/В тестирования
 
