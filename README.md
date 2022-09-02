@@ -11,7 +11,7 @@
 3) Написание [приложения](https://github.com/Netees/Recommendation-System-for-Social-networking/blob/main/app_final.py), которое разбивает пользователей на группы(control & test) и для каждой из групп использовать одну из двух реализованных моделей для выдачи рекомендации
 4) Проведение А/В тестирования
 
-[**Проверка приложения**](https://github.com/Netees/Recommendation-System-for-Social-networking/blob/main/check_req.py)
+[**Тестирование приложения**](https://github.com/Netees/Recommendation-System-for-Social-networking/blob/main/check_req.py)
 
 ## Описание данных
 ### Таблица user_data
