@@ -5,6 +5,12 @@
 ## Задача
 Необходимо реализовать сервис, который будет для каждого юзера в любой момент времени возвращать посты, которые пользователю покажут в его ленте соцсети.
 
+## Решение
+1) Подготовка фич и обучение на них Catboost модели ([Control model](https://github.com/Netees/Recommendation-System-for-Social-networking/blob/main/Prep_features_and_learning_models/Model_control_Catboost.ipynb))
+2) Подготовка фич и обучение на них Fully connected NN (Test model)
+3) Написание [приложение](https://github.com/Netees/Recommendation-System-for-Social-networking/blob/main/app_final.py) с разбиением пользователей на контрольную и тестовую группу, которая выдает рекоммендации пользователю
+4) Проведение А/В тестирования
+
 ## Описание данных
 ### Таблица user_data
 Cодержит информацию о всех пользователях соц.сети
