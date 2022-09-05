@@ -6,10 +6,14 @@
 Необходимо реализовать сервис, который будет для каждого юзера в любой момент времени возвращать посты, которые пользователю покажут в его ленте соцсети.
 
 ## Решение
-1) Подготовка фич и обучение на них Catboost модели ([Control model](https://github.com/Netees/Recommendation-System-for-Social-networking/blob/main/Prep_features_and_learning_models/Model_control_Catboost.ipynb))
+В качестве метрики оценки постов для рекомендации используется ROC-AUC на таргете "поставил ли пользователь лайк посту".
+
+1) Подготовка фич и обучение на них Catboost модели ([Control model](https://github.com/Netees/Recommendation-System-for-Social-networking/blob/main/Prep_features_and_learning_models/Model_control_Catboost.ipynb)) 
 2) Подготовка фич и обучение на них Fully connected NN ([Test model](https://github.com/Netees/Recommendation-System-for-Social-networking/blob/main/Prep_features_and_learning_models/Model_test_FC_NN.ipynb))
-3) Написание [приложения](https://github.com/Netees/Recommendation-System-for-Social-networking/blob/main/app_final.py), которое разбивает пользователей на группы(control & test) и для каждой из групп использовать одну из двух реализованных моделей для выдачи рекомендации
+3) Написание [приложения](https://github.com/Netees/Recommendation-System-for-Social-networking/blob/main/app_final.py), которое разбивает пользователей на группы(control & test) и для каждой из групп используется одна из двух реализованных моделей для выдачи рекомендации
 4) [Проведение А/В тестирования](https://github.com/Netees/Recommendation-System-for-Social-networking/blob/main/AB%20testing.ipynb)
+
+(Stack: sklearn, catboost, PyTorch, FastText, pandas, numpy, FastAPI, sqlalchemy и др.)
 
 [**Тестирование приложения, какие рекомендации выдает**](https://github.com/Netees/Recommendation-System-for-Social-networking/blob/main/check_req.py)
 
@@ -76,18 +80,3 @@ Cодержит информацию о всех пользователях со
 }, 
 ...]}
 ```
-
-
-## Оценка качества
-
-Качество алгоритма будет проверяться по метрике hitrate@5
-
-#### Hitrate@5
-![image](https://user-images.githubusercontent.com/70291566/187779949-a774e866-4f62-475c-8353-f5324e59be9b.png)
-
-где:
-
-* n - количество юзеров
-* T - количество периодов проверки
-* a_j (x_i, t) - j-ая рекомендация i-ому пользователю в момент времени t;
- 
